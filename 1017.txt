@@ -1,0 +1,8 @@
+hours = gets.chomp.to_f
+speed = gets.chomp.to_f
+
+dist = hours * speed
+litro = dist / 12
+
+resultado = '%.3f' % litro
+puts "#{resultado}"

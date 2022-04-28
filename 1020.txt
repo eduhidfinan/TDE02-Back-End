@@ -1,0 +1,11 @@
+tempo = gets.chomp.to_i
+
+ano = tempo/365
+dia = tempo%365
+mes = dia/30
+
+dia2 = dia%30
+
+puts "#{ano} ano(s)"
+puts "#{mes} mes(es)"
+puts "#{dia2} dia(s)"

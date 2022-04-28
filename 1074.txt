@@ -1,0 +1,20 @@
+N = gets.chomp.to_i
+
+for i in 1..N do
+    x = gets.chomp.to_i
+    if x%2 == 0 && x > 0
+        puts 'EVEN POSITIVE'
+   
+    elsif x%2 == 0 && x < 0
+        puts 'EVEN NEGATIVE'
+   
+    elsif x%2 != 0 && x > 0
+        puts 'ODD POSITIVE'
+   
+    elsif x%2 != 0 && x < 0
+        puts 'ODD NEGATIVE'
+   
+    else
+        puts 'NULL'
+    end
+end

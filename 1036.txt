@@ -1,0 +1,22 @@
+x = gets.chomp.split(/ /)
+
+a = x[0].to_f
+b = x[1].to_f
+c = x[2].to_f
+
+delta = (b**2) - (4*a*c)
+delta.to_i
+
+if (a==0 || delta<0)
+    puts "Impossivel calcular"
+    exit
+end
+
+R1 = ((-b) + delta**(0.5)) / (2*a)
+R2 = ((-b) - delta**(0.5)) / (2*a)
+
+R3 = '%.5f' % R1
+R4 = '%.5f' % R2
+
+puts "R1 = #{R3}"
+puts "R2 = #{R4}"

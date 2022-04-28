@@ -1,0 +1,51 @@
+x = gets.chomp.to_f
+puts "NOTAS:"
+
+controle = x/100
+puts "#{controle.to_i} nota(s) de R$100.00"
+
+x = x%100
+controle = x/50
+puts "#{controle.to_i} nota(s) de R$50.00"
+
+x = x%50
+controle = x/20
+puts "#{controle.to_i} nota(s) de R$20.00"
+
+x = x%20
+controle = x/10
+puts "#{controle.to_i} nota(s) de R$10.00"
+
+x = x%10
+controle = x/5
+puts "#{controle.to_i} nota(s) de R$5.00"
+
+x = x%5
+controle = x/2
+puts "#{controle.to_i} nota(s) de R$2.00"
+
+puts "MOEDAS:"
+
+x = x%2
+controle = x/1
+puts "#{controle.to_i} moeda(s) de R$1.00"
+
+x = x%1
+controle = x/0.50
+puts "#{controle.to_i} moeda(s) de R$0.50"
+
+x = x%0.50
+controle = x/0.25
+puts "#{controle.to_i} moeda(s) de R$0.25"
+
+x = x%0.25
+controle = x/0.10
+puts "#{controle.to_i} moeda(s) de R$0.10"
+
+x = x%0.10
+controle = x/0.05
+puts "#{controle.to_i} moeda(s) de R$0.05"
+
+x = x%0.05
+controle = x/0.009
+puts "#{controle.to_i} moeda(s) de R$0.01"

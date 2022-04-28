@@ -1,0 +1,43 @@
+X = gets.chomp.to_f
+
+if 400 >= X && X >= 0
+  Y = X * 15/100
+  Z = Y + X
+	Z2 = '%.2f' % Z
+	Y2 = '%.2f' % Y
+  puts "Novo salario: #{Z2}"
+  puts "Reajuste ganho: #{Y2}"
+  puts "Em percentual: 15 %"
+elsif 800 >= X && X > 400  
+  Y = X * 12/100
+  Z = Y + X
+	Z2 = '%.2f' % Z
+	Y2 = '%.2f' % Y
+  puts "Novo salario: #{Z2}"
+  puts "Reajuste ganho: #{Y2}"
+  puts "Em percentual: 12 %"
+elsif 1200 >= X && X > 800 
+  Y = X * 10/100
+  Z = Y + X
+	Z2 = '%.2f' % Z
+	Y2 = '%.2f' % Y
+  puts "Novo salario: #{Z2}"
+  puts "Reajuste ganho: #{Y2}"
+  puts "Em percentual: 10 %"
+elsif 2000 >= X && X > 1200
+  Y = X * 7/100
+  Z = Y + X
+	Z2 = '%.2f' % Z
+	Y2 = '%.2f' % Y
+  puts "Novo salario: #{Z2}"
+  puts "Reajuste ganho: #{Y2}"
+  puts "Em percentual: 7 %"
+else
+	Y = X * 4/100
+	Z = Y + X
+	Z2 = '%.2f' % Z
+	Y2 = '%.2f' % Y
+	puts "Novo salario: #{Z2}"
+	puts "Reajuste ganho: #{Y2}"
+	puts "Em percentual: 4 %"
+end

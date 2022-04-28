@@ -1,0 +1,4 @@
+X = gets.chomp.to_i
+Y = (X*60) /30 
+
+puts "#{Y} minutos"

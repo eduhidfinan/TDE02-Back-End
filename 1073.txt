@@ -1,0 +1,7 @@
+N = gets.chomp.to_i
+
+for i in 1..N+1
+  if i%2 == 0
+  puts "#{i}^2 = #{i**2}"
+  end
+end
